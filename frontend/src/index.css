@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans antialiased selection:bg-indigo-100 selection:text-indigo-900;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-xl shadow-slate-200/50 rounded-2xl;
+  }
+  .btn-primary {
+    @apply px-6 py-3 bg-slate-900 text-white font-medium rounded-xl hover:bg-slate-800 transition-all shadow-md shadow-slate-900/20 active:scale-95;
+  }
+  .btn-secondary {
+    @apply px-6 py-3 bg-white text-slate-700 font-medium rounded-xl hover:bg-slate-50 border border-slate-200 transition-all active:scale-95 shadow-sm;
+  }
+}
